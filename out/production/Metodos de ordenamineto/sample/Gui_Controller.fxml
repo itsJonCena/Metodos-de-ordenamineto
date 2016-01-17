@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Gui_Controller">
+   <children>
+      <Button layoutX="518.0" layoutY="48.0" mnemonicParsing="false" onAction="#CargarArchivo" text="Cargar archivo" />
+      <TableView layoutX="14.0" layoutY="217.0" prefHeight="235.0" prefWidth="662.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="Metodo" />
+          <TableColumn prefWidth="81.81378173828125" resizable="false" text="Tiempo" />
+          <TableColumn prefWidth="160.0" resizable="false" text="Num. de iteraciones" />
+            <TableColumn prefWidth="173.0" resizable="false" text="Num. de intercambios" />
+            <TableColumn prefWidth="169.0" resizable="false" text="Formulas Matematicas" />
+        </columns>
+      </TableView>
+      <Separator layoutY="182.0" prefHeight="3.0" prefWidth="777.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" />
+      <Button fx:id="btnTest" disable="true" layoutX="549.0" layoutY="95.0" mnemonicParsing="false" onAction="#runTest" text="Test" />
+   </children>
+</AnchorPane>
